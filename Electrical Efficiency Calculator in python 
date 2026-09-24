@@ -1,0 +1,18 @@
+Electrical Efficiency Calculator
+
+print("Electrical Efficiency Calculator")
+print("--------------------------------")
+
+input_power = float(input("Enter Input Power (W): "))
+output_power = float(input("Enter Output Power (W): "))
+
+if input_power > 0:
+efficiency = (output_power / input_power) * 100
+
+if 0 <= efficiency <= 100:
+    print("Electrical Efficiency =", round(efficiency, 2), "%")
+else:
+    print("Invalid values! Output power should not exceed input power.")
+
+else:
+print("Input power must be greater than 0.")
